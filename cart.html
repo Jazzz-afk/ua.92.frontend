@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for encoding and responsiveness -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page Title for Cart -->
+    <title>Cart - TurboKitz</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Begin Navbar section -->
+    <nav class="navbar">
+      <a class="navbar-brand" href="index.html">
+        <img src="TurboLogo.png" alt="TurboKitz Logo" />
+      </a>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="bmw_m3.html">M3</a></li>
+        <li class="nav-item"><a class="nav-link" href="bmw_m4.html">M4</a></li>
+        <li class="nav-item"><a class="nav-link" href="bmw_x5m.html">X5M</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item">
+          <!-- Cart link with dynamic counter -->
+          <a class="nav-link" href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html" id="authLink">Login</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Begin Cart Section -->
+    <section class="cart">
+      <h1 class="page-title">Your Cart</h1>
+      <div class="cart-container">
+        <!-- Container for cart items populated by JavaScript -->
+        <div class="cart-items" id="cartItems"></div>
+        <!-- Cart total and checkout button -->
+        <div class="cart-total" id="cartTotal"></div>
+      </div>
+    </section>
+    <!-- End Cart Section -->
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="scrollToTop()">Top</button>
+
+    <!-- Begin Footer section -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 TurboKitz. All rights reserved.</p>
+        <div class="contact-info">
+          <p>Email: support@turbokitz.com | Phone: +44 1234 567890 | Address: 123 Turbo Street, London, UK</p>
+        </div>
+        <div class="social-links">
+          <a href="https://twitter.com" target="_blank">X (Twitter)</a>
+          <a href="https://snapchat.com" target="_blank">Snapchat</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

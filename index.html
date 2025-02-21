@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta: character set and viewport settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the page -->
+    <title>TurboKitz - Home</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="home">
+    <!-- Begin Navbar section -->
+    <nav class="navbar">
+      <!-- Logo: Clicking redirects to the home page -->
+      <a class="navbar-brand" href="index.html">
+        <img src="TurboLogo.png" alt="TurboKitz Logo" />
+      </a>
+      <!-- Hamburger icon for mobile navigation -->
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- Navigation links list starts here -->
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="bmw_m3.html">M3</a></li>
+        <li class="nav-item"><a class="nav-link" href="bmw_m4.html">M4</a></li>
+        <li class="nav-item"><a class="nav-link" href="bmw_x5m.html">X5M</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item">
+          <!-- Cart link with dynamic counter -->
+          <a class="nav-link" href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+        </li>
+        <li class="nav-item">
+          <!-- Login link -->
+          <a class="nav-link" href="login.html" id="authLink">Login</a>
+        </li>
+      </ul>
+      <!-- End of navigation links -->
+    </nav>
+    <!-- End Navbar section -->
+
+    <!-- Begin Hero section with video background -->
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop>
+        <source src="HomeVideoBackground.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-content">
+        <!-- Main headline -->
+        <h1>Welcome to TurboKitz</h1>
+        <!-- Brief introduction text -->
+        <p>Your ultimate destination for premium car body kits.</p>
+        <!-- Shop Now button scrolling to featured products -->
+        <a href="#products" class="btn">Shop Now</a>
+      </div>
+    </section>
+    <!-- End Hero section -->
+
+    <!-- Begin Featured Products section -->
+    <section id="products" class="product-showcase">
+      <h2 style="color: #111;">Featured Products</h2>
+      <div class="product-grid">
+        <!-- Product Card: BMW M3 -->
+        <div class="product-card-home">
+          <a href="bmw_m3.html">
+            <img src="M3Background.jpg" alt="BMW M3 Body Kits" />
+            <div class="product-info">
+              <h3>BMW M3 Body Kits</h3>
+              <p>Upgrade your M3 with our high-quality carbon fiber body kits.</p>
+            </div>
+          </a>
+        </div>
+        <!-- Product Card: BMW M4 -->
+        <div class="product-card-home">
+          <a href="bmw_m4.html">
+            <img src="M4Background.jpg" alt="BMW M4 Body Kits" />
+            <div class="product-info">
+              <h3>BMW M4 Body Kits</h3>
+              <p>Enhance your M4's performance and style with our exclusive kits.</p>
+            </div>
+          </a>
+        </div>
+        <!-- Product Card: BMW X5M -->
+        <div class="product-card-home">
+          <a href="bmw_x5m.html">
+            <img src="X5MBackground.png" alt="BMW X5M Body Kits" />
+            <div class="product-info">
+              <h3>BMW X5M Body Kits</h3>
+              <p>Transform your X5M with our aerodynamic and stylish body kits.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Featured Products section -->
+
+    <!-- Back to Top Button for user convenience -->
+    <button id="backToTop" onclick="scrollToTop()">Top</button>
+
+    <!-- Begin Footer section -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 TurboKitz. All rights reserved.</p>
+        <div class="contact-info">
+          <p>Email: support@turbokitz.com | Phone: +44 1234 567890 | Address: 123 Turbo Street, London, UK</p>
+        </div>
+        <div class="social-links">
+          <a href="https://twitter.com" target="_blank">X (Twitter)</a>
+          <a href="https://snapchat.com" target="_blank">Snapchat</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer section -->
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

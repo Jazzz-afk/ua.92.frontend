@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags: character set and responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page title -->
+    <title>BMW M3 Body Kits - TurboKitz</title>
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Begin Navbar section -->
+    <nav class="navbar">
+      <!-- Logo: Clicking takes user to homepage -->
+      <a class="navbar-brand" href="index.html">
+        <img src="TurboLogo.png" alt="TurboKitz Logo" />
+      </a>
+      <!-- Hamburger icon for mobile navigation -->
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- Navigation links list -->
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="bmw_m3.html">M3</a></li>
+        <li class="nav-item"><a class="nav-link" href="bmw_m4.html">M4</a></li>
+        <li class="nav-item"><a class="nav-link" href="bmw_x5m.html">X5M</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item">
+          <!-- Dynamic cart counter -->
+          <a class="nav-link" href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+        </li>
+        <li class="nav-item">
+          <!-- Login link -->
+          <a class="nav-link" href="login.html" id="authLink">Login</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Begin Product Section for BMW M3 -->
+    <section class="product-page">
+      <!-- Page title and subtitle -->
+      <h1 class="page-title">BMW M3 Body Kits</h1>
+      <p class="subtitle" style="text-align: center;">
+        Experience unmatched performance and style with our exclusive M3 body kits,
+        designed to transform your ride into a true track-inspired machine.
+      </p>
+
+      <!-- Product 1: G80 M3 Full Carbon Body Kit -->
+      <div class="product-card-large">
+        <div class="product-detail">
+          <!-- Carousel container for product images -->
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="M3BodyKit.png" alt="G80 M3 Full Carbon Body Kit" />
+                </div>
+                <div class="carousel-item">
+                  <img src="M3BodyKitIndividual.png" alt="G80 M3 Full Carbon Body Kit Individual" />
+                </div>
+                <div class="carousel-item">
+                  <img src="M3BodyKitSide.png" alt="G80 M3 Full Carbon Body Kit Side" />
+                </div>
+                <div class="carousel-item">
+                  <img src="M3BodyKitRear.png" alt="G80 M3 Full Carbon Body Kit Rear" />
+                </div>
+                <div class="carousel-item">
+                  <img src="M3BodyKitRearLeft.png" alt="G80 M3 Full Carbon Body Kit Rear Left" />
+                </div>
+                <div class="carousel-item">
+                  <img src="M3BodyKitFullFront.png" alt="G80 M3 Full Carbon Body Kit Full Front" />
+                </div>
+              </div>
+              <!-- Carousel controls -->
+              <button class="carousel-control prev" onclick="prevSlide(this)">&#10094;</button>
+              <button class="carousel-control next" onclick="nextSlide(this)">&#10095;</button>
+            </div>
+          </div>
+          <!-- Product information -->
+          <div class="product-info">
+            <h3>G80 M3 Full Carbon Body Kit</h3>
+            <p class="price">£7,950.59 (Including Shipping)</p>
+            <p>
+              This kit includes front and rear bumpers, side skirts, and other aerodynamic enhancements.
+              Made from high-quality carbon fiber for a perfect fit and finish.
+            </p>
+            <!-- Action buttons -->
+            <a href="#" class="btn buy-now" data-product-name="BMW M3 Body Kits" data-product-price="7950.59">Buy Now</a>
+            <a href="#" class="btn add-to-cart" data-product-name="BMW M3 Body Kits" data-product-price="7950.59">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2: G80 M3 CS Style Carbon Grill -->
+      <div class="product-card-large">
+        <div class="product-detail">
+          <!-- Carousel container -->
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="M3Grill.png" alt="G80 M3 CS Style Carbon Grill" />
+                </div>
+                <div class="carousel-item">
+                  <img src="M3GrillSolo.png" alt="G80 M3 CS Style Carbon Grill Solo" />
+                </div>
+                <div class="carousel-item">
+                  <img src="M3GrillFull.png" alt="G80 M3 CS Style Carbon Grill Full" />
+                </div>
+              </div>
+              <!-- Carousel controls -->
+              <button class="carousel-control prev" onclick="prevSlide(this)">&#10094;</button>
+              <button class="carousel-control next" onclick="nextSlide(this)">&#10095;</button>
+            </div>
+          </div>
+          <!-- Product info -->
+          <div class="product-info">
+            <h3>G80 M3 CS Style Carbon Grill</h3>
+            <p class="price">£599.50 (Including Shipping)</p>
+            <p>
+              Enhance the front end of your M3 with this carbon grill, offering a sporty and aggressive look.
+            </p>
+            <a href="#" class="btn buy-now" data-product-name="BMW M3 Carbon Grill" data-product-price="599.50">Buy Now</a>
+            <a href="#" class="btn add-to-cart" data-product-name="BMW M3 Carbon Grill" data-product-price="599.50">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3: G80 M3 Carbon Fender & Mirror Caps -->
+      <div class="product-card-large">
+        <div class="product-detail">
+          <!-- Carousel container -->
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="M3Fender.png" alt="G80 M3 Carbon Fender" />
+                </div>
+                <div class="carousel-item">
+                  <img src="M4FenderCap.png" alt="G80 M3 Carbon Fender Cap" />
+                </div>
+                <div class="carousel-item">
+                  <img src="M4MirrorCaps.png" alt="G80 M3 Carbon Mirror Caps" />
+                </div>
+              </div>
+              <!-- Carousel controls -->
+              <button class="carousel-control prev" onclick="prevSlide(this)">&#10094;</button>
+              <button class="carousel-control next" onclick="nextSlide(this)">&#10095;</button>
+            </div>
+          </div>
+          <!-- Product info -->
+          <div class="product-info">
+            <h3>G80 M3 Carbon Fender & Mirror Caps</h3>
+            <p class="price">£299.79 (Including Shipping)</p>
+            <p>
+              Upgrade your M3 with these carbon fender and mirror caps for a sleek, sporty appearance.
+            </p>
+            <a href="#" class="btn buy-now" data-product-name="BMW M3 Fender & Mirror Caps" data-product-price="299.79">Buy Now</a>
+            <a href="#" class="btn add-to-cart" data-product-name="BMW M3 Fender & Mirror Caps" data-product-price="299.79">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4: F80 M3 Carbon Front Grill -->
+      <div class="product-card-large">
+        <div class="product-detail">
+          <!-- Carousel container -->
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="M3FrontGrillFull.png" alt="F80 M3 Carbon Front Grill Full" />
+                </div>
+                <div class="carousel-item">
+                  <img src="M3FrontGrill.png" alt="F80 M3 Carbon Front Grill" />
+                </div>
+              </div>
+              <!-- Carousel controls -->
+              <button class="carousel-control prev" onclick="prevSlide(this)">&#10094;</button>
+              <button class="carousel-control next" onclick="nextSlide(this)">&#10095;</button>
+            </div>
+          </div>
+          <!-- Product info -->
+          <div class="product-info">
+            <h3>F80 M3 Carbon Front Grill</h3>
+            <p class="price">£199.29 (Including Shipping)</p>
+            <p>
+              Enhance your M3 with this carbon front grill for a sleek, aggressive look.
+            </p>
+            <a href="#" class="btn buy-now" data-product-name="F80 M3 Carbon Front Grill" data-product-price="199.29">Buy Now</a>
+            <a href="#" class="btn add-to-cart" data-product-name="F80 M3 Carbon Front Grill" data-product-price="199.29">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Product Section -->
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="scrollToTop()">Top</button>
+
+    <!-- Begin Footer section -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 TurboKitz. All rights reserved.</p>
+        <div class="contact-info">
+          <p>Email: support@turbokitz.com | Phone: +44 1234 567890 | Address: 123 Turbo Street, London, UK</p>
+        </div>
+        <div class="social-links">
+          <a href="https://twitter.com" target="_blank">X (Twitter)</a>
+          <a href="https://snapchat.com" target="_blank">Snapchat</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
